@@ -1,0 +1,92 @@
+/*Colors*/
+$yellow: #F4D04E;
+$black: #111111;
+$grey: #7F7F7F;
+$white: #FFFFFF;
+
+h1, p {
+margin: 0;
+}
+
+body {
+    background-color: $yellow;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: $white;
+    width: 384px;
+    height: 522px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 8px 8px #000000;
+}
+
+.card-img {
+    border-radius: 10px;
+    margin: 24px 24px 0px 24px;
+}
+
+.content {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.author img {
+    width: 32px;
+    height: 32px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin: 0px 24px 24px 24px;
+    gap: 12px;
+}
+
+.label {
+    background: $yellow;
+    border-radius: 4px;
+    width: 82px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Text fonts*/
+@mixin font($weight, $color, $size) {
+    font-family: "Figtree", sans-serif;
+    font-weight: $weight;
+    color: $color;
+    line-height: 150%;
+    font-size: $size;
+}
+
+.learning, .name {
+    @include font(800, $black, 14px)
+}
+
+.date {
+    @include font(500, $black, 14px)
+}
+
+.title {
+    @include font(800, $black, 24px)
+}
+
+.title:hover {
+    @include font(800, $yellow, 24px)
+}
+
+.body-text {
+    @include font(500, $grey, 16px)
+}
