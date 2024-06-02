@@ -34,16 +34,15 @@ body {
   gap: 12px;
 }
 
-.author img {
-  width: 32px;
-  height: 32px;
-}
-
 .author {
   display: flex;
   align-items: center;
   margin: 0px 24px 24px 24px;
   gap: 12px;
+}
+.author img {
+  width: 32px;
+  height: 32px;
 }
 
 .label {
