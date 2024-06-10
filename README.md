@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/frontendmentor-blog-preview-card-screenshot.png)
-![](./assets/images/frontendmentor-blog-preview-card-hover-screenshot.png)
+![](./assets/images/blog-preview-card-screenshot.png)
+![](./assets/images/blog-preview-card-hover-screenshot.png)
 
 ### Links
 
@@ -37,14 +37,14 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5
+- CSS
 - Flexbox
 - SASS
 
 ### What I learned
 
-I learned how to use SASS, a CSS preprocessor to help style my HTML elements. I used variables to store commonly used values such as the colors in the design file, and created a "Mixin" for the font styling to reduce redundant code. Although my CSS probably isn't as optimal as it could be, I believe I was able to learn some basic functionality of SASS in this project.
+I learned how to use SASS, a CSS preprocessor to help style my HTML elements. I used variables to store commonly used values such as the colors in the design file, and created a "Mixin" for the font styling to reduce redundant code. I also learned how to nest pseudoclasses like :hover and easily style the hover effects under the same selector. Addionally, I learned how to use @font-face to use font files in the assets folder as opposed to importing them in the HTML from Google Fonts, which is the method I'm most familiar with.
 
 Below are some of my findings where using SASS really helped clean up my CSS code:
 
@@ -110,10 +110,11 @@ I noticed there were 4 types of font variations used in the final design which w
 }
 ```
 
-I also learned that HTML paragraph and heading tags contain default top and bottom margins that were messing up my spacing so I had to remove them:
+I also learned that HTML paragraph and heading tags contain default top and bottom margins that were messing up my spacing so I had to remove them at the start:
 ```css
-h1, p {
+* {
 margin: 0;
+padding: 0;
 }
 ```
 

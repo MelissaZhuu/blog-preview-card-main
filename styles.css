@@ -1,6 +1,11 @@
 /*Colors*/
-h1, p {
+@font-face {
+  font-family: figtree;
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+* {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,88 +15,114 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 62.5%;
 }
 
 .card {
   background-color: #FFFFFF;
-  width: 384px;
-  height: 522px;
-  border-radius: 20px;
+  width: 38.4em;
+  height: 52.2em;
+  border-radius: 2em;
   border-style: solid;
-  border-width: 1px;
-  box-shadow: 8px 8px #000000;
+  border-width: 0.1em;
+  box-shadow: 0.8em 0.8em #000000;
 }
 
 .card-img {
-  border-radius: 10px;
-  margin: 24px 24px 0px 24px;
+  border-radius: 1em;
+  margin: 2.4em 2.4em 0em 2.4em;
 }
 
 .content {
-  margin: 24px;
+  margin: 2.4em;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.2em;
 }
 
 .author {
   display: flex;
   align-items: center;
-  margin: 0px 24px 24px 24px;
-  gap: 12px;
+  margin: 0em 2.4em 2.4em 2.4em;
+  gap: 1.2em;
 }
 .author img {
-  width: 32px;
-  height: 32px;
+  width: 3.2em;
+  height: 3.2em;
 }
 
 .label {
   background: #F4D04E;
-  border-radius: 4px;
-  width: 82px;
-  height: 29px;
+  border-radius: 0.4em;
+  width: 8.2em;
+  height: 2.9em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /*Text fonts*/
-.learning, .name {
-  font-family: "Figtree", sans-serif;
+.learning {
+  font-family: figtree;
   font-weight: 800;
   color: #111111;
   line-height: 150%;
-  font-size: 14px;
+  font-size: 1.4em;
+}
+.learning:hover {
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .date {
-  font-family: "Figtree", sans-serif;
+  font-family: figtree;
   font-weight: 500;
   color: #111111;
   line-height: 150%;
-  font-size: 14px;
+  font-size: 1.4em;
 }
 
 .title {
-  font-family: "Figtree", sans-serif;
+  font-family: figtree;
   font-weight: 800;
   color: #111111;
   line-height: 150%;
-  font-size: 24px;
+  font-size: 2.4em;
 }
-
 .title:hover {
-  font-family: "Figtree", sans-serif;
-  font-weight: 800;
   color: #F4D04E;
-  line-height: 150%;
-  font-size: 24px;
+  cursor: pointer;
 }
 
 .body-text {
-  font-family: "Figtree", sans-serif;
+  font-family: figtree;
   font-weight: 500;
   color: #7F7F7F;
   line-height: 150%;
-  font-size: 16px;
+  font-size: 1.6em;
+}
+
+.name {
+  font-family: figtree;
+  font-weight: 800;
+  color: #111111;
+  line-height: 150%;
+  font-size: 1.4em;
+}
+.name:hover {
+  color: #F4D04E;
+  cursor: pointer;
+}
+
+.attribution {
+  font-family: figtree;
+  font-weight: 500;
+  color: #111111;
+  line-height: 150%;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 2.4em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=styles.css.map */

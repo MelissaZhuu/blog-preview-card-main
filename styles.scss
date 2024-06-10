@@ -4,8 +4,14 @@ $black: #111111;
 $grey: #7F7F7F;
 $white: #FFFFFF;
 
-h1, p {
-margin: 0;
+@font-face {
+    font-family: figtree;
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -15,47 +21,48 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 62.5%;
 }
 
 .card {
     background-color: $white;
-    width: 384px;
-    height: 522px;
-    border-radius: 20px;
+    width: 38.4em;
+    height: 52.2em;
+    border-radius: 2em;
     border-style: solid;
-    border-width: 1px;
-    box-shadow: 8px 8px #000000;
+    border-width: 0.1em;
+    box-shadow: 0.8em 0.8em #000000;
 }
 
 .card-img {
-    border-radius: 10px;
-    margin: 24px 24px 0px 24px;
+    border-radius: 1em;
+    margin: 2.4em 2.4em 0em 2.4em;
 }
 
 .content {
-    margin: 24px;
+    margin: 2.4em;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1.2em;
 }
 
 .author {
     display: flex;
     align-items: center;
-    margin: 0px 24px 24px 24px;
-    gap: 12px;
+    margin: 0em 2.4em 2.4em 2.4em;
+    gap: 1.2em;
 
     img {
-        width: 32px;
-        height: 32px;
+        width: 3.2em;
+        height: 3.2em;
     }
 }
 
 .label {
     background: $yellow;
-    border-radius: 4px;
-    width: 82px;
-    height: 29px;
+    border-radius: 0.4em;
+    width: 8.2em;
+    height: 2.9em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,29 +71,51 @@ body {
 
 /*Text fonts*/
 @mixin font($weight, $color, $size) {
-    font-family: "Figtree", sans-serif;
+    font-family: figtree;
     font-weight: $weight;
     color: $color;
     line-height: 150%;
     font-size: $size;
 }
 
-.learning, .name {
-    @include font(800, $black, 14px)
+.learning {
+    @include font(800, $black, 1.4em);
+    &:hover {
+        color: $white;
+        cursor: pointer;
+    }
 }
 
 .date {
-    @include font(500, $black, 14px)
+    @include font(500, $black, 1.4em)
 }
 
 .title {
-    @include font(800, $black, 24px)
-}
-
-.title:hover {
-    @include font(800, $yellow, 24px)
+    @include font(800, $black, 2.4em);
+    &:hover {
+        color: $yellow;
+        cursor: pointer;
+    }
 }
 
 .body-text {
-    @include font(500, $grey, 16px)
+    @include font(500, $grey, 1.6em)
+}
+
+.name {
+    @include font(800, $black, 1.4em);
+    &:hover {
+        color: $yellow;
+        cursor: pointer;
+    }
+}
+
+.attribution { 
+    @include font(500, $black, 1.1em);
+    text-align: center; 
+    margin: 2.4em;
+    
+    a {
+        color: hsl(228, 45%, 44%);
+    }
 }
